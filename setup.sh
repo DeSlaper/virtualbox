@@ -41,15 +41,9 @@ sudo pear install pear.phpunit.de/phpunit
 
 # Install Mailparse (For Snappy)
 sudo pecl install mailparse
-echo "extension=mailparse.so" | sudo tee -a /etc/php5/apache2/php.ini
 
-# Enable PHP Error Reporting
-sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini
-sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini
-sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/cli/php.ini
-sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/cli/php.ini
-sudo sed -i "s/memory_limit = .*/memory_limit = 512M/" /etc/php5/cli/php.ini
-sudo sed -i "s/;date.timezone.*/date.timezone = UTC/" /etc/php5/cli/php.ini
+# get phpini
+sudo wget -O /etc/php5/apache2/php.ini https://raw2.github.com/DeSlaper/virtualbox/master/php.ini
 
 # Generate SSH Key
 cd ~
