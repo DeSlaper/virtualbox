@@ -6,7 +6,7 @@ sudo apt-get upgrade -y
 
 # Install Web Packages
 sudo apt-get install -y build-essential dkms re2c apache2 php5 php5-dev php-pear php5-xdebug php5-apcu php5-json php5-sqlite \
-php5-mysql php5-pgsql php5-gd curl php5-curl memcached php5-memcached libmcrypt4 php5-mcrypt postgresql redis-server beanstalkd \
+php5-mysql php5-pgsql php5-gd curl php5-curl memcached php5-memcached libmcrypt4 php5-mcrypt redis-server beanstalkd \
 openssh-server git vim python2.7-dev
 
 # Download Bash Aliases
