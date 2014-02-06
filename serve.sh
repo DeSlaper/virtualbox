@@ -2,8 +2,8 @@ echo "127.0.0.1 $1" >> "/etc/hosts"
 
 vhost="<VirtualHost *:80>
   ServerName $1
-	DocumentRoot /projects/$2
-	<Directory \"/projects/$2\">
+	DocumentRoot /media/sf_projects/$2
+	<Directory \"/media/sf_projects/$2\">
 		Order allow,deny
 		Allow from all
 		Require all granted

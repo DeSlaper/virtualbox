@@ -146,8 +146,11 @@ sudo a2ensite beansole.app
 sudo /etc/init.d/apache2 restart
 
 # VirtualBox Guest Additions
+sudo /etc/init.d/vboxadd setup
 sudo mount /dev/cdrom /media/cdrom
 sudo sh /media/cdrom/VBoxLinuxAdditions.run
+sudo adduser develop vboxsf
+sudo adduser develop vboxsf
 sudo usermod -aG vboxsf www-data
 sudo usermod -aG vboxsf develop
 
